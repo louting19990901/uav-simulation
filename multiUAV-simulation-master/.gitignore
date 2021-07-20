@@ -1,0 +1,36 @@
+# ignore generated files
+*_m.h
+*_m.cc
+src/Makefile
+/doc/
+# /doc/doxy/
+# /doc/neddoc/
+
+# ignore binary files
+out/
+*.so
+*.dylib
+*.dll
+*.a
+*.lib
+*.exe
+*.o
+#*.obj # Do not ignore blender exported model file
+*.pdb
+*.idb
+*.manifest
+.tkenvrc
+
+# ignore backup and temp files as well as cache
+*.bak
+*~
+.cmdenv-log
+/cache
+/3rdparty
+/tmp/
+
+# batch simulation results
+/results/*
+*.out
+*.sca
+*.elog
