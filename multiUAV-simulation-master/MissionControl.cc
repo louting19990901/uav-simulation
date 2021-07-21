@@ -28,6 +28,7 @@ void MissionControl::initialize()
     boost::split(missionFiles, missionFilesString, boost::algorithm::is_any_of(","), boost::token_compress_on);
     for (auto it = missionFiles.begin(); it != missionFiles.end(); it++)
     {
+        EV_INFO << __func__ << "&&load command from way points file" << endl;
         missionQueue.push_back(loadCommandsFromWaypointsFile(it->c_str()));
     }
 

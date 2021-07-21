@@ -547,7 +547,8 @@ void UAVNode::loadCommands(CommandQueue commands, bool isMission)
 
         if (WaypointCommand *cmd = dynamic_cast<WaypointCommand *>(command))
         {
-            EV_INFO << __func__ << "***waypoints command loaded " << endl;
+            // EV_INFO << __func__ << "***waypoints command loaded " << endl;
+
             cee = new WaypointCEE(this, cmd);
         }
         else if (TakeoffCommand *cmd = dynamic_cast<TakeoffCommand *>(command))
